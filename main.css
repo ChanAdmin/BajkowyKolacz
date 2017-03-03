@@ -1,0 +1,180 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #232323;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+    padding: 0 0 25px 0;
+    text-transform: capitalize;
+}
+
+h2 {
+    color: #dadada;
+    font-weight: normal;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+header aside {
+    color: #dadada;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 25px;
+    /*display: none;*/
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    background: #2d2f2e;
+    box-sizing: border-box;
+    padding: 25px 50px 25px 250px;
+    margin-bottom: 50px;
+    position: relative;
+    min-height: 230px;
+}
+
+article {
+    width: 80px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-top: 4px solid transparent;
+}
+
+    article img {
+        height: 120px;
+        width: 80px;
+    }
+
+    article h3 {
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        text-transform: capitalize;
+    }
+
+.moe1 {
+    border-top: 4px solid #10893e;
+}
+
+.moe2 {
+    border-top: 4px solid #ffb900;
+}
+
+.moe3 {
+    border-top: 4px solid #d13438;
+}
+
+input[name=moe1], input[name=moe2], input[name=moe3] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[name=moe1]:checked + label {
+    border: 1px solid #10893e;
+    background: #10893e;
+}
+
+input[name=moe2]:checked + label {
+    border: 1px solid #ffb900;
+    background: #ffb900;
+}
+
+input[name=moe3]:checked + label {
+    border: 1px solid #d13438;
+    background: #d13438;
+}
+
+fieldset[name=moe] label {
+    width: 75px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    background: #2d2f2e;
+    border: 1px solid #2d2f2e;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+fieldset {
+    border: none;
+    display: inline-block;
+}
+
+
+
+section aside {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 200px;
+    text-align: center;
+    line-height: 180px;
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+section:nth-child(1) aside {
+    /*background: url(img/top1.jpg) center center no-repeat;*/
+    background: gold;
+}
+
+section:nth-child(2) aside {
+    /*background: url(img/top2.jpg) center center no-repeat;*/
+    background: silver;
+}
+
+section:nth-child(3) aside {
+    /*background: url(img/top3.jpg) center center no-repeat;*/
+    background: saddlebrown;
+}
+
+section:nth-child(4) aside {
+    /*background: url(img/top0.jpg) center center no-repeat;*/
+    background: black;
+}
